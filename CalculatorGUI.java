@@ -29,4 +29,17 @@ public class CalculatorGUI {
                 calculateResult();
             }
         });
+
+        frame.add(new JLabel("Number 1:"));
+        frame.add(textField1);
+        frame.add(new JLabel("Number 2:"));
+        frame.add(textField2);
+        frame.add(new JLabel("Operation:"));
+        frame.add(operationBox);
+        frame.add(new JLabel("Result:"));
+        frame.add(resultField);
+        frame.add(new JLabel(""));
+        frame.add(calculateButton);
+        
+        frame.setVisible(true);
 }
