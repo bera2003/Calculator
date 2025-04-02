@@ -18,4 +18,15 @@ public class CalculatorGUI {
         textField2 = new JTextField();
         resultField = new JTextField();
         resultField.setEditable(false);
+
+        String[] operations = {"+", "-", "*", "/", "sin", "cos", "tan"};
+        operationBox = new JComboBox<>(operations);
+        
+        JButton calculateButton = new JButton("Calculate");
+        calculateButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                calculateResult();
+            }
+        });
 }
