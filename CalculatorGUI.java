@@ -70,3 +70,7 @@ private void calculateResult() {
         }
         
         resultField.setText(String.valueOf(result));
+    } catch (NumberFormatException ex) {
+        JOptionPane.showMessageDialog(frame, "Invalid input. Please enter numbers only.", "Error", JOptionPane.ERROR_MESSAGE);
+    }
+}
