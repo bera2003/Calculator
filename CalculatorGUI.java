@@ -13,4 +13,9 @@ public class CalculatorGUI {
         frame.setSize(350, 250);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(new GridLayout(5, 2));
+
+        textField1 = new JTextField();
+        textField2 = new JTextField();
+        resultField = new JTextField();
+        resultField.setEditable(false
 }
