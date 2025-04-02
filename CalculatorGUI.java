@@ -17,5 +17,5 @@ public class CalculatorGUI {
         textField1 = new JTextField();
         textField2 = new JTextField();
         resultField = new JTextField();
-        resultField.setEditable(false
+        resultField.setEditable(false);
 }
