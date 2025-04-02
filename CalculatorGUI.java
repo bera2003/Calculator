@@ -43,3 +43,9 @@ public class CalculatorGUI {
         
         frame.setVisible(true);
 }
+private void calculateResult() {
+    try {
+        double num1 = Double.parseDouble(textField1.getText());
+        double num2 = textField2.getText().isEmpty() ? 0 : Double.parseDouble(textField2.getText());
+        String operation = (String) operationBox.getSelectedItem();
+        double result = 0;
