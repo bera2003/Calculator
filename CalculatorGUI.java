@@ -7,3 +7,4 @@ public class CalculatorGUI {
     private JFrame frame;
     private JTextField textField1, textField2, resultField;
     private JComboBox<String> operationBox;
+}
