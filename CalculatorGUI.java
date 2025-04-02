@@ -49,3 +49,24 @@ private void calculateResult() {
         double num2 = textField2.getText().isEmpty() ? 0 : Double.parseDouble(textField2.getText());
         String operation = (String) operationBox.getSelectedItem();
         double result = 0;
+
+        switch (operation) {
+            case "+": result = num1 + num2; break;
+            case "-": result = num1 - num2; break;
+            case "*": result = num1 * num2; break;
+            case "/": 
+                if (num2 == 0) {
+                    JOptionPane.showMessageDialog(frame, "Cannot divide by zero", "Error", JOptionPane.ERROR_MESSAGE);
+                    return;
+                }
+                result = num1 / num2;
+                break;
+            case "sin": result = Math.sin(Math.toRadians(num1)); break;
+            case "cos": result = Math.cos(Math.toRadians(num1)); break;
+            case "tan": result = Math.tan(Math.toRadians(num1)); break;
+            default: 
+                JOptionPane.showMessageDialog(frame, "Invalid Operation", "Error", JOptionPane.ERROR_MESSAGE);
+                return;
+        }
+        
+        resultField.setText(String.valueOf(result));
