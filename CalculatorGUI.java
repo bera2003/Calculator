@@ -74,3 +74,7 @@ private void calculateResult() {
         JOptionPane.showMessageDialog(frame, "Invalid input. Please enter numbers only.", "Error", JOptionPane.ERROR_MESSAGE);
     }
 }
+public static void main(String[] args) {
+    new CalculatorGUI();
+}
+}
